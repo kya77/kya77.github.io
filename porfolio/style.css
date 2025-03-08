@@ -4,3 +4,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: all 0.5s;
+    z-index: 1000;
+}
