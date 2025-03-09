@@ -145,3 +145,16 @@ section{
     display: flex;
     gap: 20px;
 }
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(270deg, #800080 10%,  #FF00FF 100%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
