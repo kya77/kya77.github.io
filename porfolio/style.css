@@ -17,7 +17,7 @@ body{
     color: white;
 }
 
-.header{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -71,4 +71,51 @@ span{
     cursor: pointer;
     z-index : 10001;
     display: none;
+}
+
+section{
+    padding: 10rem 15%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.home-content h1{
+    font-size: 8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-content h3{
+    margin: 1rem 0;
+    font-size: 4rem;;
+}
+
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.home-img img{
+    width: 18vw;
+    filter: drop-shadow(1px 1px 62px rgb(122, 21, 180));
+    transition: 0.4s ease-in-out;
 }
