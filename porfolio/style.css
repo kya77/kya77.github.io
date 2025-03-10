@@ -132,7 +132,7 @@ section{
 }
 
 .home-img img{
-    width: 22vw;
+    width: 18vw;
     filter: drop-shadow(1px 1px 60px rgb(130, 27, 189));
     transition: 0.4s ease-in-out;
 }
@@ -149,12 +149,27 @@ section{
 .btn{
     display: inline-block;
     padding: 10px 20px;
-    background: linear-gradient(270deg, #800080 10%,  #FF00FF 100%);
+    background: linear-gradient(270deg, #800080 10%, #FF00FF 100%);
     color: white;
     font-size: 1.2rem;
     font-weight: 500;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn-group a:nth-of-type(2){
+    background: transparent;
+    border: 2px solid #800080;
+    color: white;
+}
+
+.btn-group a:nth-of-type(2):hover{
+    background: linear-gradient(270deg, #800080 10%, #FF00FF 100%);
+    color: white;
 }
