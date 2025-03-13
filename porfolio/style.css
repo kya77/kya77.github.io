@@ -22,7 +22,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 10%;
+    padding: 25px 10%;
     background:rgba(0, 0, 0, 0.3) ;
     backdrop-filter: blur(10px);
     display: flex;
@@ -61,8 +61,12 @@ span{
     text-transform: uppercase;
 }
 
-.narbar a:hover{
+a{
     color: white;
+}
+
+a:hover{
+    color: rgb(149, 0, 255);
 }
 
 #menu-icon{
