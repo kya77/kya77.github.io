@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #080808;
+    color: white;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 10%;
+    background:rgba(0, 0, 0, 0.3) ;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+span{
+    background: linear-gradient(270deg, #800080 10%,  #FF00FF 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.navbar a{
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-right: 20px;
+    transition: 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    transition: all .3s ease 0s;
+    text-transform: uppercase;
+}
+
+.navbar a:hover{
+    color: rgb(74, 66, 80);
+}
+
+a{
+    color: white;
+}
+
+#menu-icon{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    z-index : 10001;
+    display: none;
+}
+
+.button{
+    padding: 9px 25px;
+    background-color: rgb(234, 0, 255,1);
+    margin-left: 58px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+}
+
+.button:hover{
+    background-color: rgb(234, 0, 255,0.8);
+}
+
+section{
+    padding: 0 19%;
+}
+
+.home{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+}
+
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    margin-top: 140px;
+    margin-bottom: 10px;
+}
+
+.home-content h3{
+    font-family: 'Permanent Marker', cursive;
+    margin: 0 0 45px;
+    font-size: 4rem;
+    line-height: 1;
+    color: white;
+}
+
+.home-content p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 40px;
+} 
+
+.home-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img{
+    width: 16vw;
+    filter: drop-shadow(1px 1px 60px rgb(130, 27, 189));
+    transition: 0.4s ease-in-out;
+}
+
+.home-img:hover img { 
+    transform: scale(1.1);
+}
+
+.btn-group{
+    display: flex;
+    gap: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(270deg, #800080 10%, #FF00FF 100%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.btn-group a:nth-of-type(2){
+    background: transparent;
+    border: 2px solid #800080;
+    color: white;
+}
+
+.btn-group a:nth-of-type(2):hover{
+    background: linear-gradient(270deg, #800080 10%, #FF00FF 100%);
+    color: white;
+}
+
+#bts-sio{
+    display: flex;
+    margin-top: 150px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.bts p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 40px;
+}
+
+/* end card2 */
+
+
+/* Variables */
+/* 
+@background: #252827;
+
+@color-primary: #004ffc;
+@color-light: white;
+@color-dim: #6c6d6d;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px; */
+
+/* start timeline */
+  
+#timeline-container h1 {
+   font-family: 'lato', sans-serif;
+   letter-spacing: 1.5px;
+   color: white;  
+   font-weight: 400;
+   font-size: 2.4em;
+}
+  
+  #timeline-content {
+    margin-top: 50px;
+    text-align: center;  
+}
+  
+  /* Timeline */
+  
+.timeline {
+    border-left: 4 solid #800080;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;    
+    background: fade(white, 3%);
+    color: fade(white, 80%);
+    font-family: 'lato';  
+    margin: 50px auto;
+    padding: 50px;
+    letter-spacing: 0.5px;   
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;   
+    list-style: none;
+    text-align: left;  
+    font-weight: 100;  
+    max-width: 30%; 
+}
+    
+    /* h1 {
+     font-family: @font-title;
+     letter-spacing: 1.5px;
+     font-weight: 100;
+     font-size: 1.4em;    
+    } */
+    
+.timeline h2, h3 {
+     font-family: 'lato';
+     letter-spacing: 1.5px;
+     font-weight: 400;
+     font-size: 1.4em;
+}
+    
+.event {
+    border-bottom: 1px dashed fade(white, 10%);
+    padding-bottom: (50px * 0.5);
+    margin-bottom: 50px;  
+    position: relative;
+
+&:last-of-type { 
+    padding-bottom: 0;
+    margin-bottom: 0; 
+    border: none;      
+}
+  
+&:before, &:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+  
+&:before {
+    left: (((120px * 0.6) + 50px + 4px + 11px + (4px * 2)) * 1.5) * -1;    
+    color: fade(white, 40%);    
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;    
+    font-size: 0.9em;
+    min-width: 120px;
+    font-family: 'lato';
+
+&:after {
+    box-shadow: 0 0 0 4px fade(#800080,100%);    
+    left: (50px + 4px + (11px * 0.35)) * -1;        
+    background: lighten(#252827,5%);    
+    border-radius: 50%;  
+    height: 11px;
+    width: 11px;
+    content: "";
+    top: 5px;
+}
+    
+
+/* end timeline */
+
+/* start skills */
+
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Grille responsive */
+    grid-gap: 20px;
+}
+
+.skill i {
+    font-size: 3em;
+    color: #800080;
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    margin-top: 0;
+}
+
