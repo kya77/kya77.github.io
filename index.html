@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Kelly YA - Portfolio</title>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-md py-6">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">Kelly YA</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-yellow-500">À propos</a></li>
+                    <li><a href="#bts" class="hover:text-yellow-500">BTS SIO</a></li>
+                    <li><a href="#skills" class="hover:text-yellow-500">Compétences</a></li>
+                    <li><a href="#projects" class="hover:text-yellow-500">Projets</a></li>
+                    <li><a href="#internships" class="hover:text-yellow-500">Stages</a></li>
+                    <li><a href="#veille" class="hover:text-yellow-500">Veille Technologique</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- À propos -->
+    <section id="about" class="py-12 container mx-auto px-4">
+        <!-- <h2 class="text-3xl font-semibold mb-4">À propos</h2> -->
+        <div class="home-content">
+            <h1>Bonjour, je suis <span>Kelly</span></h1>
+            <h3>Etudiante en BTS SIO option SLAM</h3>
+            <p>Actuellement, je suis en 2eme année de BTS SIO (Services Informatiques aux Organisations) 
+                option SLAM (Solutions Logicielles et Application Métier) qui est une option spécialisée pour le développement.<br/>
+                <br/>
+                Après l'obtention de mon baccalauréat général, avec des spécialités en mathématiques et en SVT, 
+                j'ai ressenti un véritable appel pour l'informatique. C'est un domaine qui me fascine depuis toujours,
+                et j'avais hâte de découvrir tout ce qu'il pouvait offrir.</p>
+
+                <br>
+
+                <div class="flex gap-4 mt-4">
+                    <a href="src/CV-YA-KELLY_PRO.pdf" download="mon-cv.pdf" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                      Télécharger mon CV
+                    </a>
+                    <a href="src/CV-YA-KELLY_PRO.pdf" target="_blank" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                      Ouvrir mon CV
+                    </a>
+                </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <h2 class="text-3xl font-semibold mb-4">Mon Parcours Professionnel</h2>
+        <br>
+        <div id="timeline" class="border-l-4 border-blue-500 pl-4">
+            <div class="mb-4">
+                <h3 class="font-semibold">Stage 2ème année BTS SIO</h3>
+                <p>Stage en entreprise chez ALLVISUAL</p>
+                <p>06 Janvier - 14 Février</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">
+                    Stage 1ère année BTS SIO</h3>
+                <p>Stage en entreprise chez DOCAPOSTE BPO</p>
+                <p>21 Mai - 29 Juin</p>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <h2 class="text-3xl font-semibold mb-4">Mon Parcours Scolaires</h2>
+        <br>
+        <div id="timeline" class="border-l-4 border-blue-500 pl-4">
+            <div class="mb-4">
+                <h3 class="font-semibold">2023 - 2025 : BTS SIO</h3>
+                <p>Spécialisation SLAM, développement et analyse de données.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold">2020 - 2023 : Bac Général</h3>
+                <p>Spécialités Mathématiques, Science de la Vie et de la Terre.</p>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- BTS SIO -->
+    <section id="bts" class="py-12 bg-white container mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-4">BTS SIO</h2>
+        <p>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. 
+            Formation pour les futurs techniciens en informatique.</p>
+            <br>
+            <p>Deux spécialités :</p>
+            <br>
+        <ul class="list-disc pl-6">
+            <li><strong>SLAM :</strong> Développement et gestion de bases de données.</li>
+            <li><strong>SISR :</strong> Administration des systèmes et réseaux.</li>
+        </ul>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- Compétences -->
+    <section id="skills" class="py-12 container mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-4">Compétences</h2>
+        <br>
+        <br>
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <img src="img/html_icon.png" alt="HTML" class="w-16 mx-auto">
+            <img src="img/css_icon.png" alt="CSS" class="w-16 mx-auto">
+            <img src="img/js_icon.png" alt="JavaScript" class="w-16 mx-auto">
+            <img src="img/kotlin_icon.png" alt="Kotlin" class="w-16 mx-auto">
+            <img src="img/angular_icon.png" alt="Angular" class="w-16 mx-auto">
+            <img src="img/python_icon.png" alt="Python" class="w-16 mx-auto">
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- Projets -->
+    <section id="project-details" class="py-12 bg-white container mx-auto px-6">
+
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-4">Mes Projets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="img/cover-savon-app.png" alt="Projet 1" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Projet 1</h3>
+                        <p class="text-gray-700 text-base">Description concise du projet 1</p>
+                        <br>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="img/Pokedex - Kanto.jpg" alt="Projet 2" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Projet 2</h3>
+                        <p class="text-gray-700 text-base">Description concise du projet 2</p>
+                        <br>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Voir le projet</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="" alt="Projet 3" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Projet 3</h3>
+                        <p class="text-gray-700 text-base">Description concise du projet 3</p>
+                        <br>
+                        <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+
+    <!-- Stages -->
+    <section id="internships" class="py-12 container mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-4">Stages</h2>
+        <p>Présentation de mes 2 stages...</p>
+    </section>
+
+    <!-- Veille Technologique -->
+    <section id="veille" class="py-12 bg-white container mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-4">Veille Technologique</h2>
+        <p>Articles et ressources sur les tendances technologiques...</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-12 container mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+        <p>Email : <a href="mailto:ya.nkaujtshuakelly@gmail.com" class="text-blue-500">ya.nkaujtshuakelly@gmail.com</a></p>
+        <p>Téléphone : 07 62 71 16 29</p>
+        <a href="http://linkedin.com/in/kelly-ya-02160a292" class="text-blue-500">LinkedIn</a>
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
