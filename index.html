@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <title>Kelly YA - Portfolio</title>
 </head>
 <body class="bg-gray-100 text-gray-900">
@@ -13,7 +14,7 @@
     <!-- Header -->
     <header class="bg-white shadow-md py-6">
         <div class="container mx-auto flex justify-between items-center px-6">
-            <h1 class="text-2xl font-bold">Kelly YA</h1>
+            <a class="text-2xl font-bold"><strong>KYA</strong></a>
             <nav>
                 <ul class="flex space-x-6">
                     <li><a href="#about" class="hover:text-yellow-500">À propos</a></li>
@@ -38,7 +39,7 @@
                 option SLAM (Solutions Logicielles et Application Métier) qui est une option spécialisée pour le développement.<br/>
                 <br/>
                 Après l'obtention de mon baccalauréat général, avec des spécialités en mathématiques et en SVT, 
-                j'ai ressenti un véritable appel pour l'informatique. C'est un domaine qui me fascine depuis toujours,
+                j'ai ressenti un appel pour l'informatique. C'est un domaine qui me fascine depuis toujours,
                 et j'avais hâte de découvrir tout ce qu'il pouvait offrir.</p>
 
                 <br>
@@ -54,27 +55,84 @@
 
         </div>
 
+        </section>
+
+        <br>
+        <br>
+
+        <!-- Parcours -->
+        <section class="py-12 container mx-auto px-4">
+
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Parcours Scolaires</h2>
+            <br>
+            <div class="relative">
+                <div class="border-l-2 border-gray-300">
+                    <div class="timeline-item mb-10" id="docaposte">
+                        <div class="flex items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full mr-4"></div>
+                            <div>
+                                <h2 class="text-lg font-semibold">2023 - 2025 : BTS SIO</h2>
+                                <p class="text-gray-600">Spécialisation SLAM, développement et analyse de données.</p>
+                                <p class="text-gray-500">Lycée Léonard de Vinci - 77</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item mb-10" id="allvisual">
+                        <div class="flex items-center">
+                            <div class="bg-blue-500 w-4 h-4 rounded-full mr-4"></div>
+                            <div>
+                                <h2 class="text-lg font-semibold">2021 - 2023 : Bac Général</h2>
+                                <p class="text-gray-600">Spécialités Mathématiques, Science de la Vie et de la Terre.</p>
+                                <p class="text-gray-500">Lycée Léonard de Vinci - 77</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
         <br>
         <br>
         
-        <h2 class="text-3xl font-semibold mb-4">Mon Parcours Scolaires</h2>
-        <br>
-        <div id="timeline" class="border-l-4 border-blue-500 pl-4">
-            <div class="mb-4">
-                <h3 class="font-semibold">2023 - 2025 : BTS SIO</h3>
-                <p>Spécialisation SLAM, développement et analyse de données.</p>
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Parcours Professionel</h2>
+                <br>
+                <div class="relative">
+                    <div class="border-l-2 border-gray-300">
+                        <div class="timeline-item mb-10" id="docaposte">
+                            <div class="flex items-center">
+                                <div class="bg-blue-500 w-4 h-4 rounded-full mr-4"></div>
+                                <div>
+                                    <h2 class="text-lg font-semibold">Allvisual</h2>
+                                    <p class="text-gray-600">06 Janvier 2025 - 14 Février 2025</p>
+                                    <p class="text-gray-500">Design d'interfaces utilisateur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item mb-10" id="allvisual">
+                            <div class="flex items-center">
+                                <div class="bg-blue-500 w-4 h-4 rounded-full mr-4"></div>
+                                <div>
+                                    <h2 class="text-lg font-semibold">Docaposte BPO</h2>
+                                    <p class="text-gray-600">21 Mai 2024 - 29 Juin 2024</p>
+                                    <p class="text-gray-500">Développement d'applications web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3 class="font-semibold">2020 - 2023 : Bac Général</h3>
-                <p>Spécialités Mathématiques, Science de la Vie et de la Terre.</p>
-            </div>
-        </div>
+
+
     </section>
     <br>
     <br>
 
     <!-- BTS SIO -->
-    <section id="bts" class="py-12 bg-white container mx-auto px-6">
+    <section id="bts" class="py-12 bg-white container mx-auto px-6" id="element">
         <h2 class="text-3xl font-semibold mb-4">BTS SIO</h2>
         <p>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations (BTS SIO), s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur. 
             Formation pour les futurs techniciens en informatique.</p>
@@ -109,7 +167,7 @@
     <br>
 
     <!-- Projets -->
-    <section id="project-details" class="py-12 bg-white container mx-auto px-6">
+    <section id="projects" class="py-12 bg-white container mx-auto px-6">
 
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-semibold mb-4">Mes Projets</h2>
@@ -117,7 +175,7 @@
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <img src="img/cover-savon-app.png" alt="Projet 1" class="w-full">
                     <div class="p-4">
-                        <h3 class="font-bold text-xl mb-2">Projet 1</h3>
+                        <h3 class="font-bold text-xl mb-2">Savon App</h3>
                         <p class="text-gray-700 text-base">Description concise du projet 1</p>
                         <br>
                         <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Voir le projet</a>
@@ -126,17 +184,17 @@
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
                     <img src="img/Pokedex - Kanto.jpg" alt="Projet 2" class="w-full">
                     <div class="p-4">
-                        <h3 class="font-bold text-xl mb-2">Projet 2</h3>
-                        <p class="text-gray-700 text-base">Description concise du projet 2</p>
+                        <h3 class="font-bold text-xl mb-2">Pokedex online</h3>
+                        <p class="text-gray-700 text-base">Ce projet vise à créer un Pokédex interactif et accessible en ligne. Les utilisateurs pourront rechercher des Pokémon par nom, numéro, type ou génération, et accéder à des informations détaillées sur leurs statistiques, capacités.</p>
                         <br>
                         <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Voir le projet</a>
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="" alt="Projet 3" class="w-full">
+                    <img src="img/cover-to-do-list.png" alt="Projet 3" class="w-full">
                     <div class="p-4">
-                        <h3 class="font-bold text-xl mb-2">Projet 3</h3>
-                        <p class="text-gray-700 text-base">Description concise du projet 3</p>
+                        <h3 class="font-bold text-xl mb-2">To-do-list</h3>
+                        <p class="text-gray-700 text-base">Ce projet vise à créer une application de liste de tâches simple, L'objectif principal est de fournir un outil pratique pour la gestion quotidienne des tâches.</p>
                         <br>
                         <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">Voir le projet</a>
                     </div>

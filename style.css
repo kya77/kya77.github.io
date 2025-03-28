@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .home-content h1{
     font-size: 4rem;
     font-weight: 700;
@@ -16,26 +20,4 @@
     font-size: 2rem;
     line-height: 1;
     color: rgb(0, 140, 255);
-}
-
-.modal {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    transition: all 0.3s ease-in-out;
-    align-items: center;
-    justify-content: center;
-}
-
-.modal.open{
-    opacity: 1;
-    z-index: 999;
 }
